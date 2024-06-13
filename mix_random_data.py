@@ -1,7 +1,7 @@
 import os
 import shutil
 
-def add_data(current_img_path, current_label_path, new_img_path, new_label_path, prefix='EV', interval=2):
+def add_data(current_img_path, current_label_path, new_img_path, new_label_path, prefix='NDA'):
     current_img_files = set(os.listdir(current_img_path))
     current_label_files = set(os.listdir(current_label_path))
 
@@ -10,7 +10,7 @@ def add_data(current_img_path, current_label_path, new_img_path, new_label_path,
 
     next_index = 1
 
-    for i in range(0, len(new_img_files), interval):
+    for i in range(0, len(new_img_files)):
         img_file = new_img_files[i]
         label_file = os.path.splitext(img_file)[0] + '.txt'
 
@@ -27,9 +27,9 @@ def add_data(current_img_path, current_label_path, new_img_path, new_label_path,
             print(f"Copied {img_file} and {label_file} to {new_img_name} and {new_label_name} in the current directories.")
             next_index += 1
 
-current_img_path = 'D:/projects/iist/backup_data/final_data/predictions/data/val/images'
-current_label_path = 'D:/projects/iist/backup_data/final_data/predictions/data/val/labels'
-new_img_path = 'D:/projects/iist/backup_data/final/data/images/train'
-new_label_path = 'D:/projects/iist/backup_data/final/data/labels/train'
+current_img_path = 'D:/projects/iist/pest_images/agricultural pest'
+current_label_path = 'D:/projects/iist/pest_images/agr_label'
+new_img_path = 'D:/projects/iist/backup_data/final/f_data/images/train'
+new_label_path = 'D:/projects/iist/backup_data/final/f_data/labels/train'
 
 add_data(new_img_path,new_label_path,current_img_path,current_label_path )

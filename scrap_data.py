@@ -1,0 +1,2 @@
+from bing_image_downloader import downloader
+downloader.download('agricultural pest', limit=1000,  output_dir='D:/projects/iist/pest_images', adult_filter_off=True, force_replace=False, timeout=30, verbose=True)
