@@ -25,8 +25,8 @@ def remove_unmatched_images(image_folder, label_folder):
 
     print(f"Removed {len(unmatched_images)} unmatched image files.")
 # Define the image and label folder paths
-image_folder = 'D:/projects/iist/pest_images/agricultural pest'
-label_folder = "D:/projects/iist/pest_images/agr_label"
+image_folder = 'C:/Users/nazal/Downloads/hg_data'
+label_folder = "C:/Users/nazal/Downloads/hg_data"
 
 # Run the function to remove unmatched images
 remove_unmatched_images(image_folder, label_folder)

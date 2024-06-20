@@ -12,12 +12,12 @@ def rename_files(image_folder, label_folder):
         return
 
     for idx, (img_file, label_file) in enumerate(zip(image_files, label_files)):
-        new_img_name = f"IP{idx + 1}.jpg"  # Change the extension as needed
-        new_label_name = f"IP{idx + 1}.txt"
+        new_img_name = f"RDT{idx + 1}.jpg"  # Change the extension as needed
+        new_label_name = f"RDT{idx + 1}.txt"
         
         os.rename(os.path.join(image_folder, img_file), os.path.join(image_folder, new_img_name))
         os.rename(os.path.join(label_folder, label_file), os.path.join(label_folder, new_label_name))
 
-image_folder = 'data_prep/images'
-label_folder = 'data_prep/labels'
+image_folder = 'C:/Users/nazal/Downloads/n/test'
+label_folder = 'C:/Users/nazal/Downloads/n/test'
 rename_files(image_folder, label_folder)
