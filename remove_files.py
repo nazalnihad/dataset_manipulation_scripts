@@ -17,4 +17,4 @@ def remove(img_path, img_label, prefix):
                 os.remove(label_path)
                 print(f"Removed {file.replace('.jpg', '.txt')} from {img_label}")
         
-remove('D:/projects/iist/backup_data/final_data/predictions/data/val/images','D:/projects/iist/backup_data/final_data/predictions/data/val/labels','EV')
+remove('D:/projects/iist/backup_data/final/obj','D:/projects/iist/backup_data/final/obj','EV')

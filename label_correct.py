@@ -23,5 +23,5 @@ def process_files(directory):
                 file.write('\n'.join(modified_lines) + '\n')
 
 # Specify the directory containing the .txt files
-directory_path = 'backup_data/final/labels'
+directory_path = 'D:/projects/iist/backup_data/final/obj'
 process_files(directory_path)
